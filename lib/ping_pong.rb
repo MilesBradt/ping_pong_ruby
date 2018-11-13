@@ -1,5 +1,3 @@
-
-
 def counter(input)
   x = 0
   counted_numbers = []
@@ -15,6 +13,8 @@ def ping_pong(array_input)
   array_input.each do |array_element|
     if (array_element % 3 === 0)
       array_element = "ping"
+    elsif (array_element % 5 === 0)
+      array_element = "pong"
     else
       array_element
     end

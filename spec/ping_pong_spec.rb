@@ -8,7 +8,7 @@ describe('#ping_pong') do
     expect(counter(5)).to(eq([1, 2, 3, 4 , 5]))
   end
 
-  it('replaces anything divisible by 3 with ping') do
-    expect(ping_pong(counter(6))).to(eq([1, 2, "ping", 4, 5, "ping"]))
+  it('replaces anything divisible by 3 with ping and anything divisible by 5 with pong') do
+    expect(ping_pong(counter(10))).to(eq([1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong"]))
   end
 end
